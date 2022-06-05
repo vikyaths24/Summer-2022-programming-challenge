@@ -2,7 +2,6 @@ beautifulsoup4
 requests
 urllib3
 regex
-json
 tqdm
 vaderSentiment
 plotly
