@@ -1,7 +1,7 @@
 beautifulsoup4
 requests
 urllib3
-re 
+regex
 json
 tqdm
 vaderSentiment
