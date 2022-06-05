@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
 
-
-
-
-
-# In[13]:
 
 
 from bs4 import BeautifulSoup
@@ -17,7 +11,7 @@ import re
 import json
 
 
-# In[14]:
+
 
 
 url = 'https://www.aljazeera.com/where/mozambique/'
@@ -30,44 +24,22 @@ except requests.exceptions.HTTPError as err:
     raise SystemExit(err)
 
 
-# In[ ]:
 
 
 
 
-
-# In[ ]:
-
-
-
-
-
-# In[15]:
 
 
 soup = BeautifulSoup(page.text, "html.parser")
 
 
-# In[ ]:
 
 
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[16]:
-
-
+#extract all articles links based on their clickable cards
 links2=soup.find_all('a', 
      attrs={'class':'u-clickable-card__link'})
 
 
-# In[17]:
 
 
 articlesdata={}
@@ -85,13 +57,9 @@ for j,i in enumerate(links2):
         
 
 
-# In[ ]:
 
 
 
-
-
-# In[20]:
 
 
 textvals={}
@@ -105,20 +73,10 @@ for i in articlesdata.values():
     textvals[str(head)]=str(links)
 
 
-# In[ ]:
-
-
-
-
-
-# In[21]:
-
-
 with open('article.json', 'w') as json_file:
     json.dump(textvals, json_file)
 
 
-# In[ ]:
 
 
 
