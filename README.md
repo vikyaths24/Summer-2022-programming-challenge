@@ -63,3 +63,5 @@ From the above graphs we can also infer most of the articles have a neutral tone
 Scraper.py - 3.67 ± 0.1977 seconds (may vary due to response time of website)
 
 Preprocessing.py and sentimentandvisual.py - 4.00 ± 0.3956 seconds
+
+Total time - 7.67 ± 0.5933 seconds
