@@ -59,3 +59,7 @@ The overall sentiments of each Articles can be judged from the last plot which i
 
 From the above graphs we can also infer most of the articles have a neutral tone in majority .This maybe due to the fact of usage of more neutral words like The,This,That,It,and,etc in the article writing.The overall compound score is not greatly affected by usage of these neutral words tho they are in the majority due to the fact of english literature and how ssentences are phrased. The negative and positive words dictate mostly the sentiment of these articles.
 
+## Running Time of Code
+Scraper.py - 3.67 ± 0.1977 seconds (may vary due to response time of website)
+
+Preprocessing.py and sentimentandvisual.py - 4.00 ± 0.3956 seconds
