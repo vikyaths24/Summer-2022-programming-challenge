@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
 
 
 from Preprocessing import preprocess
@@ -9,31 +8,13 @@ import plotly.express as px
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
-# In[3]:
 
 
 l=preprocess()
 
 
-# In[4]:
-
 
 #print(l)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[5]:
 
 
 sid = SentimentIntensityAnalyzer()
@@ -49,19 +30,6 @@ for i in l:
     analysisc.append(ans['compound'])
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[6]:
 
 
 fig = px.line(y=analysisp)
@@ -90,13 +58,7 @@ fig.update_yaxes(title_text='Compound Value')
 fig.show()
 
 
-# In[7]:
 
-
-
-
-
-# In[ ]:
 
 
 
