@@ -15,7 +15,8 @@ import json
 
 
 url = 'https://www.aljazeera.com/where/mozambique/'
-#Use the browser to get the URL. This is a suspicious command that might blow up.
+#Use the browser to get the URL. 
+#This is a suspicious command that might blow up.
 
 try:
     page= requests.get(url)
@@ -35,7 +36,8 @@ soup = BeautifulSoup(page.text, "html.parser")
 
 
 
-#extract all articles links based on their clickable cards
+#extract all articles links 
+#based on their clickable cards
 links2=soup.find_all('a', 
      attrs={'class':'u-clickable-card__link'})
 
