@@ -1,7 +1,7 @@
-beautifulsoup4
-requests
-urllib3
-regex
-tqdm
-vaderSentiment
-plotly
+beautifulsoup4==4.11.1
+requests==2.27.1
+urllib3==1.26.9
+regex==2022.6.2
+tqdm==4.64.0
+vaderSentiment==3.3.2
+plotly==5.8.0
