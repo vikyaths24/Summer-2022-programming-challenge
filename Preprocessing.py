@@ -22,7 +22,7 @@ def preprocess():
         j=re.sub("\<.*?\>","",j[1:-1])
         i=re.sub("\<.*?\>","",i[1:-1])
    
-        l.append(j+i)
+        l.append(j+' . '+i)
     return l
 
 
